@@ -1,0 +1,45 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+
+use_frameworks!  
+
+target 'SZ_RxSwift_SimpleDemo' do  
+
+# 视图约束库
+pod 'SnapKit'
+
+# RxSwift的必备库
+pod 'RxSwift'
+
+# 对 UIKit Foundation 进行 Rx 化
+pod 'RxCocoa'
+
+# 为我们提供 rx_disposeBag
+pod 'NSObject+Rx'
+
+# 为RxSwift专用提供，对Alamofire进行封装的一个网络请求库
+pod 'Moya/RxSwift'
+
+# Json转模型之必备良品
+pod 'ObjectMapper'
+
+# 帮助我们优雅的使用tableView的数据源方法
+pod 'RxDataSources'
+
+# 提供快速初始化的语法糖
+pod 'Then'
+
+# 图片加载库
+pod 'Kingfisher'
+
+# 帮助我们优雅的使用自定义cell和view,不再出现Optional
+pod 'Reusable'
+
+# 上拉加载、下拉刷新的库
+pod 'MJRefresh'
+
+# 简单易用的HUD
+pod 'SVProgressHUD'
+
+end  
